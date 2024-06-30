@@ -98,7 +98,7 @@ const Header = () => {
             Marilyne Tsene<br /><span className=''>Full Stack Web Developer</span>
           </h1>
           <h2 className={`${supreme.className} mb-8`}>
-            Je suis développeuse Full Stack spécialisée dans la création de sites web responsives, accessibles et dotés d'un UX design exceptionnel.
+            Je suis développeuse Full Stack spécialisée dans la création de sites web responsives, accessibles et dotés d&aposun UX design exceptionnel.
           </h2>
         
           <a href="CVAlternanceMarilyne.pdf" download="CVMarilyneTSENE.pdf" className='border border-solid text-green border-green px-4 py-2 w-fit'>Voir mon parcours</a>

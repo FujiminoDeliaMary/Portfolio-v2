@@ -19,10 +19,10 @@ const Hero = () => {
             <div className='flex flex-col gap-3'>
               <h3 className='text-white text-2xl'><FlipWords words={words} className="custom-class"/></h3>
               <p className={` text-secondary ${supreme.className}`}>
-              Bonjour, je suis Marilyne Delia, une camerounaise de 18 ans , actuellement en France et étudiant à l’université de la rochelle.<br></br><br></br>
+              Bonjour, je suis Marilyne Delia, une camerounaise de 18 ans , actuellement en France et étudiant à l&aposuniversité de la rochelle.<br></br><br></br>
               Je suis une développeuse web passionnée par la conception des solutions innovantes, accessibles et responsives  sur le web.<br></br><br></br>
 
-              Je suis passionnée par l'apprentissage continu et toujours à la recherche de nouvelles compétences et connaissances pour enrichir mon expertise.
+              Je suis passionnée par l&aposapprentissage continu et toujours à la recherche de nouvelles compétences et connaissances pour enrichir mon expertise.
 
               </p>
             
