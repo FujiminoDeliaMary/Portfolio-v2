@@ -1,0 +1,22 @@
+/* styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.list-decimal {
+    list-style: none;
+    counter-reset: item;
+    padding-left: 0;
+  }
+  
+  .list-decimal li::before {
+    content: "0" counter(item) ". ";
+    counter-increment: item;
+    display: block;
+    bottom: 30px;
+    color: var(--green); /* Ou utilisez la classe text-green-500 en Tailwind */
+    left: 50%;
+    position: absolute;
+  }
+  
