@@ -18,11 +18,11 @@ const Hero = () => {
 
             <div className='flex flex-col gap-3'>
               <h3 className='text-white text-2xl'><FlipWords words={words} className="custom-class"/></h3>
-              <p className={` text-secondary ${supreme.className}`}>
-              Bonjour, je suis Marilyne Delia, une camerounaise de 18 ans , actuellement en France et étudiant à l&aposuniversité de la rochelle.<br></br><br></br>
-              Je suis une développeuse web passionnée par la conception des solutions innovantes, accessibles et responsives  sur le web.<br></br><br></br>
+              <p className={` text-secondary text-md ${supreme.className}`}>
+              Bonjour, je suis Marilyne Delia, une camerounaise de 18 ans , actuellement en France et étudiant le <strong className='text-green font-normal'>développement web</strong> à <strong className='text-green font-normal'>l&apos;université de la rochelle</strong>. Je suis passionée par la musique , les mangas, le cinéma, stack overflow et l&apos;univers du développement web.<br></br><br></br>
+              Amoureuse de la <strong className='text-green font-normal'>conception des solutions innovantes</strong> , accessibles et responsives  sur le web, je suis venue du Gabon après avoir obtenu un <strong className='text-green font-normal'>BTS d&apos;analyste programmeur</strong>  qui m&apos;a donner les bases en réseau, en mathématiques appliquées, architectures des ordinateurs, programmation, et bien d&apos;autres...<br></br><br></br>
 
-              Je suis passionnée par l&aposapprentissage continu et toujours à la recherche de nouvelles compétences et connaissances pour enrichir mon expertise.
+              Toujours enthousiaste à l&apos;idée d&apos;apprendre et de me perfectionner, je suis constamment à la recherche de nouvelles compétences et de connaissances pour enrichir mon expertise. Je suis également motivé par la possibilité de travailler avec de nouvelles équipes, ce qui me permet de m&apos;améliorer continuellement et d&apos;apporter des perspectives fraîches et innovantes.
 
               </p>
             
