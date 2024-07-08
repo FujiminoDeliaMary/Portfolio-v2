@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     
     <footer className='flex justify-between  items-end px-10 pt-28 pb-10 bg-background text-white'>
-        <div className='hidden sm:flex flex-col flex-1 gap-3 '>
+        <div className='hidden lg:flex flex-col flex-1 gap-3 '>
             <p className="text-xl text-green">Marilyne</p>
             <p className={` lg:w-2/3 text-secondary text-sm ${inconsolata.className}`}>Je suis marilyne - jeune développeuse web full Stack . Merci d’avoir visité mon site et à bientôt !</p>
             <div className='flex gap-2'>
@@ -46,7 +46,7 @@ const Footer = () => {
             </div>
         </div>
         
-        <nav className={`hidden ml-auto items-end justify-stretch self-start sm:flex flex-col flex-1  p-3  ${inconsolata.className}`}>
+        <nav className={`hidden ml-auto items-end justify-stretch self-start lg:flex flex-col flex-1  p-3  ${inconsolata.className}`}>
           <h2 className={`text-green font-bold ${supreme.className}`}>
           Menu
          </h2>
