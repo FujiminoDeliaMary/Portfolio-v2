@@ -15,9 +15,9 @@ const Skills = () => {
         <h2 className={`text-2xl font-bold ${lato.className} `}>
             <span className={` text-green ${inconsolata.className}`}>02.</span> Mes compétences
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 pt-20">
+        <div className="flex flex-wrap justify-between gap-6 pt-20">
         {Object.keys(skills).map((category) => (
-          <div key={category} className=" rounded-lg shadow p-4">
+          <div key={category} className=" rounded-lg shadow p-4 w-fit">
             <h3 className="text-xl font-semibold mb-2 capitalize">{category}</h3>
             <ul className="list-disc list-inside">
               {skills[category].map((skill) => (

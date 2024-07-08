@@ -10,7 +10,7 @@ import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 const Footer = () => {
   return (
     
-    <footer className='flex justify-between  items-end px-10 pt-28 pb-10 bg-background text-white'>
+    <footer className='flex justify-center lg:justify-between items-end px-10 pt-28 pb-10 bg-background text-white'>
         <div className='hidden lg:flex flex-col flex-1 gap-3 '>
             <p className="text-xl text-green">Marilyne</p>
             <p className={` lg:w-2/3 text-secondary text-sm ${inconsolata.className}`}>Je suis marilyne - jeune développeuse web full Stack . Merci d’avoir visité mon site et à bientôt !</p>
