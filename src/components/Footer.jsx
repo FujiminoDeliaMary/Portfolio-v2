@@ -1,10 +1,8 @@
 import React from 'react'
-import linkedinIcon from '../assets/icons/linkedin.svg';
 import githubIcon from '../assets/icons/githubIcon.svg';
 import Image from 'next/image';
-import {  lora, supreme, inconsolata, lato } from '../app/styles/fonts'
-import { Linkedin } from 'lucide-react';
-import Link from 'next/link';
+import { supreme, inconsolata } from '../app/styles/fonts'
+import { Linkedin} from 'lucide-react';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
 const Footer = () => {
@@ -15,7 +13,7 @@ const Footer = () => {
             <p className="text-xl text-green">Marilyne</p>
             <p className={` lg:w-2/3 text-secondary text-sm ${inconsolata.className}`}>Je suis marilyne - jeune développeuse web full Stack . Merci d’avoir visité mon site et à bientôt !</p>
             <div className='flex gap-2'>
-                <a href="" rel='noopener' target='_BLANK'>
+                <a href="https://www.linkedin.com/in/marilyne-tsene/" rel='noopener' className='hover:text-green' target='_BLANK'>
                     <Linkedin />
                 </a>
                 

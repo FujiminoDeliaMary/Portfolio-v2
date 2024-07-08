@@ -14,10 +14,10 @@ const Hero = () => {
 
         </h2>
 
-        <div className='flex flex-col justify-center items-center lg:flex-row lg:items-start lg:w-3/4 gap-20 mt-24'>
+        <div className='flex flex-col justify-between items-center lg:flex-row lg:items-start gap-20 pr-10 mt-24'>
 
             <div className='flex flex-col gap-3'>
-              <h3 className='text-white text-2xl'><FlipWords words={words} className="custom-class"/></h3>
+              <h3 className='text-white text-2xl pb-5'><FlipWords words={words} className="custom-class"/></h3>
               <p className={` text-secondary text-md ${supreme.className}`}>
               Bonjour, je suis <strong className='text-green font-normal'>Marilyne Tsene</strong>, une camerounaise de 18 ans , actuellement en France et étudiant le <strong className='text-green font-normal'>développement web</strong> à <strong className='text-green font-normal'>l&apos;université de la rochelle</strong>. Je suis passionée par la musique , les mangas, le cinéma, stack overflow et l&apos;univers du développement web.<br></br><br></br>
               Amoureuse de la <strong className='text-green font-normal'>conception des solutions innovantes</strong> , accessibles et responsives  sur le web, je suis venue du Gabon après avoir obtenu un <strong className='text-green font-normal'>BTS d&apos;analyste programmeur</strong>  qui m&apos;a donner les bases en réseau, en mathématiques appliquées, architectures des ordinateurs, programmation, et bien d&apos;autres...<br></br><br></br>
