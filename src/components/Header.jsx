@@ -1,14 +1,11 @@
 "use client";
 import React, { useEffect, useState } from 'react';
 import { lora, supreme, inconsolata, lato, generalSans } from '../app/styles/fonts';
-import Link from 'next/link';
-import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
 import { FloatingNav } from '../components/ui/floating-navbar.jsx'; // Assurez-vous d'importer le composant FloatingNav
-
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-
 
   const navItems = [
     { name: 'A propos', link: 'apropos' },
@@ -20,22 +17,22 @@ const Header = () => {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden'; // Empêcher le défilement lorsque le menu est ouvert
-      document.body.classList.add('blur-sm');
+      document.body.classList.add('blurr');
     } else {
       document.body.style.overflow = 'auto'; // Réactiver le défilement lorsque le menu est fermé
-      document.body.classList.remove('blur-sm');
+      document.body.classList.remove('blurr');
     }
 
     // Nettoyer les effets lorsqu'il y a un changement
     return () => {
       document.body.style.overflow = 'auto';
-      document.body.classList.remove('blur-sm');
+      document.body.classList.remove('blurr');
     };
   }, [isOpen]);
 
   return (
     <>
-      <header className='relative text-white bg-cover bg-center bg-no-repeat pb-64' style={{ backgroundImage: "url('./images/background-header.png')" }}>
+      <header className={`relative text-white bg-cover bg-center bg-no-repeat pb-64 ${!isOpen && 'overflow-hidden'}`} style={{ backgroundImage: "url('./images/background-header.png')" }}>
         <nav className={`flex justify-between items-center p-3 ${inconsolata.className} overflow-x-hidden`}>
           <h2 className={`text-4xl font-bold ${supreme.className}`}>
             <span className={`text-green`}>Ma</span>rilyne
@@ -68,7 +65,7 @@ const Header = () => {
             </div>
           
             <nav
-              className={` flex-col z-40 absolute top-0 bottom-0 h-full transition-all duration-500 ease-out bg-background px-20 py-40 gap-6 md:flex-row ${isOpen ? 'translate-x-0 opacity-100 right-0' : 'translate-x-full opacity-0'}`}
+              className={`flex-col z-40 absolute top-0 bottom-0 h-full transition-all duration-500 ease-out bg-background px-20 py-40 gap-6 md:flex-row right-0 ${isOpen ? 'translate-x-0' : 'translate-x-full  '}`}
             >
               <ol className='list-decimal text-xl mt-16 flex flex-col gap-20 justify-center items-center md:flex-row'>
                 {navItems.map((item, idx) => (

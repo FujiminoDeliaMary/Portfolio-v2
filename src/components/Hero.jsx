@@ -14,7 +14,7 @@ const Hero = () => {
 
         </h2>
 
-        <div className='flex flex-col justify-center items-center md:flex-row md:items-start md:w-3/4 gap-20 mt-24'>
+        <div className='flex flex-col justify-center items-center lg:flex-row lg:items-start lg:w-3/4 gap-20 mt-24'>
 
             <div className='flex flex-col gap-3'>
               <h3 className='text-white text-2xl'><FlipWords words={words} className="custom-class"/></h3>
