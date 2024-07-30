@@ -12,6 +12,7 @@ import githubIcon from '../assets/icons/githubIcon.svg';
 import linkIcon from '../assets/icons/linkIcon.svg';
 import Image from 'next/image';
 
+
 const Projects = () => {
   const projects = [
     {
@@ -85,17 +86,18 @@ const Projects = () => {
       <div className=" pt-20 flex flex-col gap-32">
         {projects.map((project, index) => (
           <div className={`flex flex-col items-center justify-center gap-8 md:gap-24 ${index % 2 !== 0 ? 'md:flex-row-reverse' : 'md:flex-row'}`} key={index}>
-            <div className={`relative w-full md:w-3/4 flex flex-col md:flex-row gap-6 md:gap-14 ${index % 2 !== 0 ? 'md:flex-row-reverse' : 'md:flex-row'}`} >
+            <div className={`relative w-full h-full md:h-auto lg:w-3/4 flex flex-col md:flex-row gap-6 md:gap-14 ${index % 2 !== 0 ? 'md:flex-row-reverse' : 'md:flex-row'}`} >
               <Image
                 src={project.image}
                 alt={project.titleKey}
-                className="object-cover"
-                width={500}
-                height={500}
+                className="absolute inset-0 object-cover h-full w-full md:w-1/2 md:relative"
+                width={430}
+                height={430}
+
               />
-              <div className="absolute inset-0 flex flex-col gap-6 bg-background bg-opacity-80 md:bg-none md:relative md:bg-transparent p-4 md:p-0">
+              <div className="relative z-10 flex flex-col gap-6 bg-background  bg-opacity-80 md:bg-none md:relative md:bg-transparent p-4 md:p-0 md:w-1/2">
                 <h3 className={`text-green text-2xl font-semibold ${supreme.className}`}>{`${project.title}`}</h3>
-                <p className={`overflow-hidden text-ellipsis ${inconsolata.className}`}>{`${project.description}`}</p>
+                <p className={` ${inconsolata.className}`}>{`${project.description}`}</p>
                 <p className={`text-green ${lato.className}`}>{project.technos.join(', ')}</p>
                 <div className="flex gap-3">
                   <a href={project.link} target="_blank" rel="noopener noreferrer">

@@ -1,0 +1,46 @@
+{
+    "projects" : [
+        {
+            "id" : 4,
+            "image": "artfullcode.png",
+            "name" : "Artfull Code",
+            "date" : "Décembre 2023",
+            "description" : "Site web de présentation d'une agence web fictive basée à la rochelle.",
+            "why" : "Dans le cadre de mon projet tutoré en dernière année de licence, j'ai travaillé avec une équipe composée d'un autre développeur et de deux designers. Le but de ce projet a été de créer une agence web fictive.",
+            "methods" : "Pour mener à bien ce projet, il a été essentiel de sélectionner des technologies performantes et adaptées, capables d'allier une expérience utilisateur fluide et un bon référencement SEO. Nous avons d'abord effectué une analyse approfondie des besoins, puis défini les meilleures pratiques à suivre, incluant le choix de frameworks et de bibliothèques appropriés pour le développement. ",
+            "how" : "La première étape était donc de pouvoir établir chaque partie du site web qui pourrait clairement démontrer l'activité de l'entreprise. Ensuite effectué le design et ensuite effectué le développement.",
+            "feelings" : "La réalisation de ce projet m'a énormément satisfaite."
+        },
+        {
+            "id" : 2,
+            "name" : "9coworking",
+            "image" : "9coworking.png",
+            "description" : "Application web dédié à la gestion des utilisateurs et des lieux d'un espace de coworking.",
+            "why" : "Dans le cadre du stage que j'ai eu l'opportunité d'effectuer dans un espace de coworking, j'ai remarqué plusieurs problèmes dans la gestion de ce coworking tant dans la gestion des coworkers nomades que dans la gestion des espaces de travail qui y sont. Pour améliorer tout cela, il a donc fallu un outil informatique puissant qui serait capable de ",
+            "methods" : "",
+            "how" : "",
+            "feelings" : ""
+        },
+        {
+            "id" : 3,
+            "name" : "Portfolio v2",
+            "image" : "portfoliov2.png",
+            "description" : "",
+            "why" : "",
+            "methods" : "",
+            "how" : "",
+            "feelings" : ""
+        },
+        {
+            "id" : 1,
+            "image" : "lettreenlumiere.png",
+            "name" : "Lettres en lumière",
+            "description" : "Une application web interactive servant à l’apprentissage de la lecture et de l’écriture de la langue française à des prisonniers allophones, analphabètes ou illettrées et permettant leur réinsertion sociale à l’achèvement de leur peine.",
+            "why" : "Dans le cadre de mon projet tutoré en dernière année de licence, j'ai travaillé avec une équipe composée d'un autre développeur et de deux designers. Notre client, Camille Burr, enseignant de français à la prison de l’île de Ré, souhaitait une application web interactive pour aider les détenus à améliorer leur maîtrise de la langue française. L'objectif de cette application était de proposer des jeux interactifs prédéfinis par lui même pour rendre l'apprentissage plus ludique et efficace. Plutôt intéressant comme projet, non ?",
+            "methods" : "",
+            "how" : "",
+            "feelings" : "Ce projet, différent des autres, a été extrêmement motivant pour moi. Savoir que cette application pourrait aider plusieurs détenus à se réinsérer et, d'une certaine manière, faciliter leur vie, m'a énormément encouragé. C'était également mon premier gros projet, ce qui a ajouté une dimension supplémentaire à mon engagement. J'ai passé de nombreuses heures à faire des recherches sur divers sites web et de nombreuses nuits blanches à travailler sur cette œuvre. L'impact potentiel de notre application m'a poussé à donner le meilleur de moi-même tout au long du processus de développement."
+        }
+    ]
+} 
+
