@@ -1,39 +1,39 @@
-"use client";
+"use client"
+
 import React, { useEffect, useState } from 'react';
-import { lora, supreme, inconsolata, lato, generalSans } from '../app/styles/fonts';
-import { Link as ScrollLink } from 'react-scroll';
-import { FloatingNav } from '../components/ui/floating-navbar.jsx'; // Assurez-vous d'importer le composant FloatingNav
+import { ScrollLink } from 'react-scroll';
+import { supreme, inconsolata, } from '../app/styles/fonts';
 
-const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
+const Menu = () => {
 
-  const navItems = [
-    { name: 'A propos', link: 'apropos' },
-    { name: 'Compétences', link: 'skills' },
-    { name: 'Projets', link: 'projects' },
-    { name: 'Contact', link: 'contact' },
-  ];
+    const [isOpen, setIsOpen] = useState(false);
+    const navItems = [
+        { name: 'A propos', link: 'apropos' },
+        { name: 'Compétences', link: 'skills' },
+        { name: 'Projets', link: 'projects' },
+        { name: 'Contact', link: 'contact' },
+      ];
 
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden'; // Empêcher le défilement lorsque le menu est ouvert
-      document.body.classList.add('blurr');
-    } else {
-      document.body.style.overflow = 'auto'; // Réactiver le défilement lorsque le menu est fermé
-      document.body.classList.remove('blurr');
-    }
+      console.log(navItems)
 
-    // Nettoyer les effets lorsqu'il y a un changement
-    return () => {
-      document.body.style.overflow = 'auto';
-      document.body.classList.remove('blurr');
-    };
-  }, [isOpen]);
+      useEffect(() => {
+        if (isOpen) {
+          document.body.style.overflow = 'hidden'; // Empêcher le défilement lorsque le menu est ouvert
+          document.body.classList.add('blurr');
+        } else {
+          document.body.style.overflow = 'auto'; // Réactiver le défilement lorsque le menu est fermé
+          document.body.classList.remove('blurr');
+        }
+    
+        // Nettoyer les effets lorsqu'il y a un changement
+        return () => {
+          document.body.style.overflow = 'auto';
+          document.body.classList.remove('blurr');
+        };
+      }, [isOpen]);
 
   return (
-    <>
-      <header className={`relative text-white bg-cover bg-center bg-no-repeat pb-64 ${!isOpen && 'overflow-hidden'}`} style={{ backgroundImage: "url('./images/background-header.png')" }}>
-        <nav className={`flex justify-between items-center p-3 ${inconsolata.className} overflow-x-hidden`}>
+    <nav className={`flex justify-between items-center p-3 ${inconsolata.className} overflow-x-hidden`}>
           <h2 className={`text-4xl font-bold ${supreme.className}`}>
             <span className={`text-green`}>Ma</span>rilyne
           </h2>
@@ -90,20 +90,7 @@ const Header = () => {
             ))}
           </ul>
         </nav>
-        <div className='mt-32 ml-5 md:ml-20 w-3/4'>
-          <h1 className={`${generalSans.className} font-bold flex flex-col gap-2 text-5xl mb-8`}>
-            Marilyne Tsene<br /><span className=''>Full Stack Web Developer</span>
-          </h1>
-          <h2 className={`${supreme.className} mb-8`}>
-            Je suis développeuse Full Stack spécialisée dans la création de sites web responsives, et d&apos;applications mobiles ,accessibles et dotés d&apos;un UX design exceptionnel.
-          </h2>
-        
-          <a href="CVAlternanceMarilyne.pdf" download="CVMarilyneTSENE.pdf" className='border border-solid text-green border-green px-4 py-2 w-fit'>Voir mon parcours</a>
-        </div>
-      </header>
-      <FloatingNav navItems={navItems} />
-    </>
-  );
-};
+  )
+}
 
-export default Header;
+export default Menu
