@@ -44,7 +44,7 @@ const Page = () => {
         <section className='flex flex-col justify-between gap-14 items-center mt-24 md:flex-row lg:gap-40'>
           <div className='text-white flex flex-col gap-10 justify-center'>
             <h1 className='text-5xl font-bold '>{currentProject.name}</h1>
-            <h2> {currentProject.description} </h2>
+            <h2 dangerouslySetInnerHTML={{ __html: currentProject.description }} />
             <div className='flex flex-col gap-0'>
               <p>Technos : <span className={`text-green ${inconsolata.className}`}>{currentProject.technos.join(', ')}</span></p>
               <p> Date : <span className={`text-green ${inconsolata.className}`}>{currentProject.date}</span></p>
@@ -67,12 +67,12 @@ const Page = () => {
 
         <section className='px-3 flex flex-col gap-10 mt-20 text-white'>
           <h2 className={` text-3xl font-bold ${lato.className}`}>Les méthodes de réalisation trouvées</h2>
-          <p className={`w-1/2 ml-52 ${poppins.className}`}>{currentProject.methods}</p>
+          <p className={`w-1/2 ml-52 ${poppins.className}`} dangerouslySetInnerHTML={{__html: currentProject.methods}}/>
         </section>
 
         <section className='px-3 flex flex-col gap-10 mt-20 text-white'>
           <h2 className={` text-3xl font-bold ${lato.className}`}>Comment ?</h2>
-          <p className={`w-1/2 ml-52 ${poppins.className}`}>{currentProject.how}</p>
+          <p className={`w-1/2 ml-52 ${poppins.className}`} dangerouslySetInnerHTML={{__html: currentProject.how}} />
         </section>
 
         <section className='px-3 flex flex-col gap-10 my-20 text-white'>

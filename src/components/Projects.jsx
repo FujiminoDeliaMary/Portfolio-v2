@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import { lora, supreme, inconsolata, lato } from '../app/styles/fonts';
+import { supreme, inconsolata, lato } from '../app/styles/fonts';
 
 import githubIcon from '../assets/icons/githubIcon.svg';
 import linkIcon from '../assets/icons/linkIcon.svg';
