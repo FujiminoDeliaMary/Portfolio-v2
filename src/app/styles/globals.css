@@ -37,3 +37,7 @@
     display: none;
     transition: display 0.3s ease-in-out;
   }
+
+  .curtain{
+    content: '';
+  }
