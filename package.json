@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.1.4",
-    "@next/font": "^14.2.4",
+    "@ext/font": "^14.2.4",
     "clsx": "^2.1.1",
     "framer-motion": "^11.2.12",
     "lucide-react": "^0.397.0",

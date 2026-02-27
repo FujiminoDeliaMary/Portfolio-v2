@@ -95,10 +95,10 @@ const Header = () => {
             Marilyne Tsene<br /><span className=''>Full Stack Web Developer</span>
           </h1>
           <h2 className={`${supreme.className} mb-8`}>
-            Je suis développeuse Full Stack spécialisée dans la création de sites web responsives, et d&apos;applications mobiles ,accessibles et dotés d&apos;un UX design exceptionnel.
+            Je suis développeuse Full Stack spécialisée dans la création de sites web responsives, et d&apos;applications mobiles ,accessibles et dotés d&apos;un UX design exceptionnel. J&apos;intègre également des solutions d&apos;intelligence artificielle et de data pour créer des applications intelligentes et à forte valeur ajoutée.
           </h2>
         
-          <a href="CVAlternanceMarilyne.pdf" download="CVMarilyneTSENE.pdf" className='border border-solid text-green border-green px-4 py-2 w-fit'>Voir mon parcours</a>
+          <a href="Marilyne_Tsene_CV.pdf" download="Marilyne_Tsene_CV.pdf" className='border border-solid text-green border-green px-4 py-2 w-fit'>Voir mon parcours</a>
         </div>
       </header>
       <FloatingNav navItems={navItems} />

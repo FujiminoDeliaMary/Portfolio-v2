@@ -11,7 +11,7 @@ const Contact = () => {
             Intéressé.e ?
         </h2>
         <a className='text-4xl text-center text-green' href='mailto:marilynedelia@gmail.com'>Contactez-Moi</a>
-        <p className={`${supreme.className} w-1/2 text-center`} >Je suis actuellement à la recherche d’alternance, en développement web ou dans tout autre domaine tournant autour de ce métier. Donc si vous avez des opportunités à me proposer ou tout simplement me proposer une collaboration, je suis toujours ouverte à la discussion.</p>
+        <p className={`${supreme.className} w-1/2 text-center`} >Je suis actuellement à la recherche de mon premier emploi, en développement logiciel, data science ou dans tout autre domaine tournant autour de ce métier. Donc si vous avez des opportunités à me proposer ou tout simplement me proposer une collaboration, je suis toujours ouverte à la discussion.</p>
 
         
         <a className='flex gap-5 border-2 border-green px-4 py-2' href='mailto:marilynedelia@gmail.com'>
