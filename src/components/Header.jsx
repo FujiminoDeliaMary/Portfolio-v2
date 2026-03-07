@@ -92,7 +92,7 @@ const Header = () => {
         </nav>
         <div className='mt-32 ml-5 md:ml-20 w-3/4'>
           <h1 className={`${generalSans.className} font-bold flex flex-col gap-2 text-5xl mb-8`}>
-            Marilyne Tsene<br /><span className=''>Full Stack Web Developer</span>
+            Marilyne Tsene<br /><span className=''>Full Stack Developer / Data scientist</span>
           </h1>
           <h2 className={`${supreme.className} mb-8`}>
             Je suis développeuse Full Stack spécialisée dans la création de sites web responsives, et d&apos;applications mobiles ,accessibles et dotés d&apos;un UX design exceptionnel. J&apos;intègre également des solutions d&apos;intelligence artificielle et de data pour créer des applications intelligentes et à forte valeur ajoutée.
