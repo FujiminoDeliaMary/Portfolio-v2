@@ -9,6 +9,7 @@ import coworking from '../../../assets/images/coworking.png';
 import artfullcode from '../../../assets/images/artfullcode.png';
 import portfolio from '../../../assets/images/portfoliov2.png';
 import lettres from '../../../assets/images/lettreenlumiere.png'
+import carriera from '../../../assets/images/carriera.png'
 import {  House } from 'lucide-react';
 import Link from 'next/link';
 
@@ -17,13 +18,15 @@ const Page = () => {
     artfullcode : artfullcode,
     portfoliov2 : portfolio,
     lettreenlumiere : lettres,
-    coworking : coworking
+    coworking : coworking,
+    carriera : carriera
   }
 
   const pathName = usePathname();
   const id = pathName.split('/').pop();
  
   const currentProject = db.projects.find(p => p.id == id);
+
   const image = images[currentProject.image]
 
 
@@ -53,7 +56,7 @@ const Page = () => {
             
           </div>
           <Image 
-            src={`${image.src}`}
+            src={image}
             alt={`.Bannière de ${currentProject.name}`}
             width={400}
             height={400}
