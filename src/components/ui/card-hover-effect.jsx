@@ -1,7 +1,7 @@
-import { cn } from "@/lib/utils";
-import {  lora, supreme, inconsolata, lato } from '../../app/styles/fonts'
+
+import {supreme} from '../../app/styles/fonts'
 import { AnimatePresence, motion } from "framer-motion";
-// import Link from "next/link";
+
 import { useState } from "react";
 
 export const HoverEffect = ({
@@ -50,6 +50,7 @@ export const HoverEffect = ({
   );
 };
 
+// eslint-disable-next-line react/prop-types
 export const Card = ({
   className,
   children,
@@ -66,6 +67,8 @@ export const Card = ({
     </div>
   );
 };
+
+// eslint-disable-next-line react/prop-types
 export const CardTitle = ({
   className,
   children,
@@ -76,23 +79,20 @@ export const CardTitle = ({
     </h3>
   );
 };
-export const CardDescription = ({
-  className,
-  children,
-}) => {
+
+// eslint-disable-next-line react/prop-types
+export const CardDescription = ({ className, children }) => {
   return (
-    <ul
-      className={
-        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm"
-       }
-    >
-
-        {children.map((skill) => (
-        <li key={skill} className={`list-none text-secondary ${supreme.className}`}>{skill}</li>
-        ))}
-
+    <ul className={"mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm"}>
+      {children.map((skill) => (
+        <li key={skill.name} className={`list-none text-secondary flex items-center justify-between gap-2 mb-1 ${supreme.className}`}>
+          <span>{skill.name}</span>
+          <span>
+            <span className="text-green">{"★".repeat(skill.level)}</span>
+            <span className="text-gray-600">{"★".repeat(3 - skill.level)}</span>
+          </span>
+        </li>
+      ))}
     </ul>
-      
-     
   );
 };

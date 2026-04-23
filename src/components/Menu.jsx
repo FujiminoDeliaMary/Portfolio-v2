@@ -69,9 +69,10 @@ const Menu = () => {
             >
               <ol className='list-decimal text-xl mt-16 flex flex-col gap-20 justify-center items-center md:flex-row'>
                 {navItems.map((item, idx) => (
-                  <li className='relative cursor-pointer' key={idx}>
-                    <ScrollLink to={item.link} smooth={true} duration={500} onClick={() => setIsOpen(false)}>
-                      {item.name}
+                  <li key={idx} className='cursor-pointer relative group'>
+                    <ScrollLink to={item.link} smooth={true} duration={500}>
+                      <span className='text-green'>{`0${idx + 1}`}</span>.{item.name}
+                      <span className='absolute -bottom-1 left-0 w-0 h-0.5 bg-green transition-all duration-300 group-hover:w-full'></span>
                     </ScrollLink>
                   </li>
                 ))}
@@ -82,9 +83,10 @@ const Menu = () => {
 
           <ul className="md:flex hidden gap-6">
             {navItems.map((item, idx) => (
-              <li key={idx} className='cursor-pointer'>
+              <li key={idx} className='cursor-pointer relative group'>
                 <ScrollLink to={item.link} smooth={true} duration={500}>
-                  <span className={`text-green`} onClick={() => setIsOpen(false)}>{`0${idx + 1}`}</span>.{item.name}
+                  <span className='text-green'>{`0${idx + 1}`}</span>.{item.name}
+                  <span className='absolute -bottom-1 left-0 w-0 h-0.5 bg-green transition-all duration-300 group-hover:w-full'></span>
                 </ScrollLink>
               </li>
             ))}

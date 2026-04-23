@@ -17,18 +17,15 @@ const Hero = () => {
 
             <div className='flex flex-col gap-3'>
               <h3 className='text-white text-2xl pb-5'><FlipWords words={words} className="custom-class"/></h3>
-              <p className={` text-secondary text-md ${supreme.className}`}>
-              Bonjour, je suis <strong className='text-green font-normal'>Marilyne Tsene</strong>, développeuse FullStack avec des appétences en data science spécialisée en développement logiciel et intelligence artificielle.
+              <p className={`text-secondary text-md ${supreme.className}`}>
+                Le monde du numérique m'a toujours fascinée mais je ne voulais pas juste l'utiliser, je voulais <strong className='text-green font-normal'>en faire partie</strong>. Créer, concevoir, <strong className='text-green font-normal'>résoudre des problèmes concrets avec des solutions techniques efficaces</strong> : c'est ce qui me fait me lever le matin.
 
-              Formée à <strong className='text-green font-normal'>l’Université de La Rochelle</strong> puis actuellement en fin de formation à <strong className='text-green font-normal'>EPSI Nantes</strong>, je consolide aujourd’hui mon expertise à travers une alternance en cours à <strong className='text-green font-normal'>CGI</strong>.
+                Développeuse <strong className='text-green font-normal'>Full Stack</strong> avec des appétences en <strong className='text-green font-normal'>Data Science et IA</strong>, je me suis formée à <strong className='text-green font-normal'>l'Université de La Rochelle</strong> puis à <strong className='text-green font-normal'>EPSI Nantes</strong>, où je consolide aujourd'hui mon expertise en alternance chez <strong className='text-green font-normal'>CGI</strong>.
 
-              Passionnée par la conception de <strong className='text-green font-normal'>solutions innovantes, performantes et sécurisées</strong>, j’interviens sur le développement d’applications web, l’architecture logicielle, la gestion de projet, la sécurité ainsi que sur des projets intégrant la data et l’intelligence artificielle.
+                Curieuse par nature, motivée par les défis et <strong className='text-green font-normal'>passionnée par mon métier</strong>, je cherche constamment à progresser et à avoir un impact réel sur les projets que je touche.
 
-              Titulaire d’un <strong className='text-green font-normal'>BTS Analyste Programmeur</strong>, j’ai acquis de solides bases en réseaux, architectures systèmes, programmation et mathématiques appliquées.
-
-              Curieuse, rigoureuse et enthousiaste, j’ai hâte de découvrir de nouvelles aventures professionnelles et de contribuer à des projets à forte valeur ajoutée.
+                Mon ambition ? Intégrer une <strong className='text-green font-normal'>entreprise qui met l'humain au coeur de ses actions</strong>, où je pourrai mettre mes compétences au service de projets ambitieux et continuer à grandir.
               </p>
-            
             </div>
             <Image 
                   className='border-4 rounded-md border-green'

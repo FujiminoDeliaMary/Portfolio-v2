@@ -92,9 +92,10 @@ const Header = () => {
 
           <ul className="md:flex hidden gap-6">
             {navItems.map((item, idx) => (
-              <li key={idx} className='cursor-pointer'>
+              <li key={idx} className='cursor-pointer relative group'>
                 <ScrollLink to={item.link} smooth={true} duration={500}>
-                  <span className={`text-green`} onClick={() => setIsOpen(false)}>{`0${idx + 1}`}</span>.{item.name}
+                  <span className='text-green'>{`0${idx + 1}`}</span>.{item.name}
+                  <span className='absolute -bottom-1 left-0 w-0 h-0.5 bg-green transition-all duration-300 group-hover:w-full'></span>
                 </ScrollLink>
               </li>
             ))}
@@ -109,7 +110,14 @@ const Header = () => {
             Je suis développeuse Full Stack spécialisée dans la création de sites wùeb responsives, et d&apos;applications mobiles ,accessibles et dotés d&apos;un UX design exceptionnel. J&apos;intègre également des solutions d&apos;intelligence artificielle et de data pour créer des applications intelligentes et à forte valeur ajoutée.
           </h2>
         
-          <a href="Marilyne_Tsene_CV.pdf" download="Marilyne_Tsene_CV.pdf" className='border border-solid text-green border-green px-4 py-2 w-fit'>Voir mon parcours</a>
+          <a 
+            href="Marilyne_Tsene_CV.pdf" 
+            download="Marilyne_Tsene_CV.pdf" 
+            className='relative overflow-hidden border border-solid text-green border-green px-4 py-2 w-fit group transition-all duration-300'
+          >
+            <span className='absolute inset-0 bg-green w-0 group-hover:w-full transition-all duration-500 ease-out'></span>
+            <span className='relative z-10 group-hover:text-background transition-colors duration-300'>Voir mon parcours</span>
+          </a>
         </div>
       </header>
       <FloatingNav navItems={navItems} />
